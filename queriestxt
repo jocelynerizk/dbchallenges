@@ -60,4 +60,4 @@ FROM students
 RIGHT JOIN teachers ON students.teacher_id = teachers.id
 WHERE students.id IS NULL;
 
-challenge 5
+challenge 5 add
