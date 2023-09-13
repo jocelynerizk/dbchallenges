@@ -1,1 +1,28 @@
-hello
+CHALLENGE 1
+mysql -u root -p command
+ CREATE DATABASE schoolDB; 
+ USE schoolDB;
+  SHOW DATABASES; 
+CHALLENGE 2
+  -- Create the teachers table
+CREATE TABLE teachers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    subject VARCHAR(255)
+);
+SHOW TABLES;
+ DESCRIBE teachers;
+  INSERT INTO teachers(id, first_name, last_name, subject)
+    -> VALUES (1, 'John', 'Doe', 'Math'),
+    ->        (2, 'Jane', 'Smith', 'Science');
+challenge 3
+ -- fetching all records
+SELECT * FROM teachers;
+ -- fetching 2 columns
+SELECT first_name, subject FROM teachers;
+
+
+
+
+
